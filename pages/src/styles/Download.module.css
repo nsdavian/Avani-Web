@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+
+.app__download {
+    display: flex;
+    flex-direction: row;
+    padding: 0 4rem;
+    padding-bottom: 1rem;
+}
+
+.app__download_animation_wrap {
+    display: flex;
+    width: 50%;
+    height: 30%;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.app__download_link {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.app__download_link h2 {
+    font-size: 45px;
+    font-family: 'Cormorant Upright', serif;
+}
+
+.app__download_button {
+    width: 60%;
+    align-self: center;
+    font-size: 16px;
+    background-color: #F83839;
+}
+
+@media screen and (max-width: 1150px) {
+    .app__download {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-bottom: 2rem;
+    }
+
+    .app__download_animation_wrap {
+        width: 100%;
+    }
+
+    .app__download_link {
+        width: 100%;
+    }
+}

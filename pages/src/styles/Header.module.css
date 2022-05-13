@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+
+.app__header {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 2rem;
+}
+
+.app__header_text {
+    margin-left: 5%;
+    margin-right: 5px;
+    width: 30%;
+}
+
+.app__header_text h1 {
+    margin: 0;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-size: 80px;
+    font-family: 'Cormorant Upright', serif;
+}
+
+.app__header_text p {
+    margin-left: 20px;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.app__header_right {
+    width: 66%;
+
+}
+
+@media screen and (max-width: 1150px) {
+    .app__header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .app__header_text {
+        margin: 0;
+        width: min-content;
+    }
+
+    .app__header_text p {
+        width: 90%;
+        font-size: 18px;
+        margin: 18px 0;
+    }
+
+    .app__header_right {
+        width: 100%;
+    }
+}
+

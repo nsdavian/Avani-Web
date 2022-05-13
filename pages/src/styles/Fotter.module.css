@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+
+.footer {
+    display: flex;
+    flex: 1;
+    padding: 2rem 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #090A0E;
+  }
+  
+.footer h3 {
+    margin: 0;
+    color: #E3E3E3;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Cormorant Upright', serif;
+}
+  
+  

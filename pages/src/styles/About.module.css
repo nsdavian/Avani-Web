@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+
+.app__about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+    background-color: #F83839;
+}
+
+.app__about h2 {
+    margin-bottom: 32px;
+    font-size: 44px;
+    font-weight: bold;
+    font-family: 'Cormorant Upright', serif;
+}
+
+.app__card_case {
+    display: flex;
+    flex-direction: row;
+    margin: 2rem 0;
+}
+
+.app__about_wave {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+@media screen and (max-width: 1150px) {
+
+    .app__card_case {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 0.5rem;
+    }
+
+    .app__about h2 {
+        margin-bottom: 20px;
+    }
+
+}
