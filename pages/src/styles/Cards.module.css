@@ -1,117 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Rubik+Moonrocks&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
 
 .about__card {
-    position: relative;
-    margin: 0 1.5rem;
-    height: 360px;
-    width: 275px;
-}
-
-.about__card:hover .about__box {
-    transform: rotateY(180deg);
-    transition: 0.6s ease-in;
-}
-
-.about__card:hover .about__box .about__content_front {
-    display: none;
-    transition: 0.6s ease-in;
-}
-
-.about__card:hover .about__box .about__content_back {
-    backface-visibility: visible;
-}
-
-
-.about__box {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    right: 20px;
-    bottom: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 1rem 2.4rem;
+    margin-bottom: 3rem;
+    height: 336px;
+    width: 260px;
     border-radius: 15px;
+    background-color: #E3E3E3;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-    background-color: #E4E5E8;
     overflow: hidden;
-
-    transition: 0.6s ease-in;
-    transform-style: preserve-3d;
 }
 
-.about__content {
-    display: flex;
-    flex-direction: column;
-
-    text-align: center;
-}
-
-.about__content_front {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-}
-
-.about__content_back {
-    position: absolute;
-    transform: rotateY(180deg);
-    backface-visibility: hidden;
-}
-
-.about__img {
-    position: fixed;
-}
 
 .about__text {
-    position: fixed;
-    font-size: 35px;
-    font-family: 'Rubik Moonrocks', cursive;
-    top: 20px;
-    color: rgba(0, 0, 0, 0.664);
-}
-
-
-.about__content_back p {
-    font-size: 19;
-    font-weight: 600;
-    text-align: center;
-    margin: 0;
-    padding: 0 1rem;
-    text-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-}
-
-.about__flip {
-    position: fixed;
     display: flex;
-    height: 2.7rem;
-    width: 5.5rem;
-    padding: 0 5px;
-    bottom: 40px;
-    align-self: center;
     align-items: center;
     justify-content: center;
-    border-radius: 4px;
-    background-color: rgba(0, 0, 0, 0.658);
+    font-size: 28px;
+    font-family: 'Libre Baskerville', serif;
+    margin: 0;
+    height: 17%;
+    color: #090A0E;
+    border-bottom: 1px solid #090A0E;
 }
 
-.about__flip h4 {
-    color: #59D6D7;
+.about__sub {
     font-size: 18px;
-    margin: 0 7px;
+    font-weight: 600;
+    height: 83%;
+    padding: 0 0.5rem;
+    margin: 0;
+    margin-top: 0.3rem;
+    text-align: center;
+    text-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    color: #090A0E;
 }
 
-.about__flip_icon {
-    color: #59D6D7;
-    width: 20px;
-}
 
 @media screen and (max-width : 1150px ) {
     .about__card {
-        margin: 1rem 0;
+        margin: 1.7rem 0;
     }
 }
 

@@ -19,7 +19,7 @@ const Nav = () => {
             <li><a href='#about' >About Us</a></li>
             <li><a href='#download' >Download</a></li>
         </ul>
-        <a href='/' className={styles.contact__a} >
+        <a className={styles.contact__a} >
             <div onClick={() => alert('Contact support Unavailable')} className={styles.app__nav_contact} >
                 Contact Us
             </div>

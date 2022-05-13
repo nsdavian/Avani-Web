@@ -6,11 +6,12 @@
     flex-direction: column;
     align-items: center;
     padding-top: 1rem;
-    background-color: #F83839;
+    background-color: #090A0E;
 }
 
 .app__about h2 {
     margin-bottom: 32px;
+    color: #E3E3E3;
     font-size: 44px;
     font-weight: bold;
     font-family: 'Cormorant Upright', serif;
