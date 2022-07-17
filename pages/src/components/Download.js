@@ -31,8 +31,10 @@ const Download = () => {
         
         
         <div className={styles.app__download_link} >
-            <h2>Start your journey with Avani and take a step forward with your business </h2>
-            <Button color='#F83839' variant="contained" className={styles.app__download_button} onClick={() => alert('Download link Unavailable')} >Download</Button>
+            <h2>Begin your journey with Avani and take a step forward with your business </h2>
+            <button 
+            onClick={() => alert('Download link not available')}
+            className={styles.app__download_button} >Download</button>
         </div>
     </div>
   )

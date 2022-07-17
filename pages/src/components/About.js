@@ -2,15 +2,20 @@ import React from 'react'
 import Cards from './Cards'
 import Wave from '../assets/Wave'
 
-
+import { motion } from 'framer-motion'
 import styles from '../styles/About.module.css'
 
 
 const About = () => {
   return (
-    <div className={styles.app__about} id='about' >
+    <motion.div 
+    whileInView={{ opacity: 1 }}
+    transition={{ duration: 0.5, type: 'tween' }}
+    className={styles.app__about} 
+    id='about' >
         <h2>About Us</h2>
-        <div className={styles.app__card_case} >
+        <motion.div 
+        className={styles.app__card_case} >
             <Cards
             title='Buy'
             sub='Avani not only provides you with the option to sell your products
@@ -29,9 +34,9 @@ const About = () => {
                  state but with Avani you can also select an institution thereby allowing you to shop specifically for
                  your sales in or around your school through our app as convient ar you'll like"
             />
-        </div>
+        </motion.div>
         <Wave className={styles.app__about_wave} /> 
-    </div>
+    </motion.div>
   )
 }
 

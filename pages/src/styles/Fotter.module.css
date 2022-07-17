@@ -4,18 +4,29 @@
 .footer {
     display: flex;
     flex: 1;
-    padding: 2rem 0;
+    padding: 1.6rem 0;
     justify-content: center;
     align-items: center;
-    background-color: #090A0E;
+    border-top: 0.3px solid #808080;
+    background-color: #000000;
   }
   
 .footer h3 {
     margin: 0;
     color: #E3E3E3;
     text-align: center;
-    font-size: 25px;
+    font-size: 22px;
     font-family: 'Cormorant Upright', serif;
 }
+
+.footer a {
+  list-style: none;
+  text-decoration: none;
+}
   
+@media screen and (max-width : 450px) {
+  .footer h3 {
+    font-weight: 500;
+  }
+}
   

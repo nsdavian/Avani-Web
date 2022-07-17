@@ -4,10 +4,11 @@ import Header from './components/Header'
 import About from './components/About'
 import Download from './components/Download'
 import Footer from './components/Footer'
+import styles from  './styles/Home.module.css'
 
 const App = () => {
   return (
-    <div style={{ backgroundColor: '#59D6D7' }} >
+    <div className={styles.main} >
         <Nav />
         <Header />
         <About />

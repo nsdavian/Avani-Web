@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import styles from '../styles/Header.module.css'
 
-import design from '../assets/images/RS-3.jpeg'
+import design from '../assets/images/App_mockup.png'
 
 const Header = () => {
   return (
@@ -16,7 +16,7 @@ const Header = () => {
         </div>
 
         <div className={ styles.app__header_right } >
-            <Image style={ styles.app__header_image }  src={design} alt='something image like' />
+            <Image height={600} width={300} style={ styles.app__header_image }  src={design} alt='something image like' />
         </div>
     </div>
   )

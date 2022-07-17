@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import styles from '../styles/Nav.module.css'
+import Image from 'next/image'
+import logo from '../assets/images/caslogo.jpg'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
-import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
+import { faBarsStaggered, faXmark } from '@fortawesome/free-solid-svg-icons'
 
 
 const Nav = () => {
@@ -12,7 +13,7 @@ const Nav = () => {
   return (
     <nav className={styles.app__nav}  >
         <div className={styles.app__nav_logo} >
-            <h2>Avani - RS</h2>
+            <Image src={logo} height={50} width={130} />
         </div>
         <ul className={styles.app__nav_list} >
             <li><a href='#home' >Home</a></li>
@@ -26,7 +27,7 @@ const Nav = () => {
         </a>
 
         <div className={styles.app__nav_smallscreen} >
-            <FontAwesomeIcon icon={faBars} className={styles.app__nav_open} onClick={() => setToggle(true)} />
+            <FontAwesomeIcon icon={faBarsStaggered} className={styles.app__nav_open} onClick={() => setToggle(true)} />
 
             {toggle && (
                 <div className={styles.app__nav_smallscreen_overlay} >
